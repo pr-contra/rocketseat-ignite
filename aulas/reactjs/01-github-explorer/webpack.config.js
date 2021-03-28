@@ -26,14 +26,17 @@ module.exports = {
       {
         test: /\.(js|mjs|jsx|ts|tsx)$/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
+        use: ["babel-loader"]
       },
       {
         test: /\.css$/,
         exclude: /node_modules/,
         use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /.*\.(gif|png|jpe?g)$/i,
+        exclude: /node_modules/,
+        use: ["file-loader"]
       },
     ],
   },
