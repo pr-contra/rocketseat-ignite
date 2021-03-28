@@ -1,4 +1,6 @@
 import { render } from "react-dom";
 import { App } from "./App";
 
-render(<h1>Test</h1>, document.getElementById("root")); 
+throw Error("pah Cenas");
+
+render(<App />, document.getElementById("root")); 
